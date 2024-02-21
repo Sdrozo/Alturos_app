@@ -1,7 +1,5 @@
 # Alturos Project
-![alt text](data/images/Alturos-logo_white.png)
-
-![alt text](https://www.alturos.com/wp-content/themes/yootheme/cache/d2/mobile_on_the_rock2-d2244e8c.webp)
+![alt text](data/images/Frontpage.png)
 
 ## General Project Abstract
 
@@ -52,20 +50,17 @@ development of ML prediction models, and utilization of clustering algorithms to
 - Access to Google API for location services.
 - App to track data (if new data is to be captured and analized)
 
-## How to Work with the Repo
-Instructions on setting up the development environment (including the environment.yml file).
-Guidelines for contributing to the app development and data analysis pipeline
-Guidelines to
-how to label data for supervised learning (binary classification or more)
-train models on more data
-test functions with prediction pipeline notebook
-use the streamlit app
-Detailed steps for running simulations and using the prediction models.
+## How to Work with the Alturos AlpineSync Repository
+- Environment: Create an environment by installing the dependencies from the requirements.txt file. This will allow you to run all the notebooks and be able to analyse data and create predictions. 
+- App: You can run and test the app showcasing our results [AlpineSync App](https://alpinesync.streamlit.app/)
+- Folders: 
+    - App: Find all necessary scripts for the app. 
+    - Data: This includes images for the app, readme as well as raw and labelled data for training and testing the model. Moreover, this includes the lifts_db for naming lifts. 
+    - Models: Find all our trained Random Forrest Classifier algorithms in here. You can import them easily using the Joblib library. 
+   - Notebooks: Find all relevant Jupyter Notebooks on labelling data, training and testing a RFC, reformatting new data, as well as the full data pipeline which is at work inside of our app. Please note that these notebooks feature many inline comments explaining the logic. Moreover, you will find insights into other practices we have been doing during this project. 
 
-Idea ... include this somewhere or make this a separate point for the ageinda i.e. "App"
-summarise different scripts we have come up for the app, i.e., lift detection, ux stuff etc?
-- pipeline schematic
-- ![alt text](data/images/pipeline_schematic.png)
+__Data Pipeline Schematic__
+![alt text](data/images/pipeline_schematic.png)
 
 ## Potential next steps 
 - Train and test models on more data from different regions
@@ -85,99 +80,3 @@ try pipeline with real time data input (no simulation )
 - "on lift" event recognition. ![alt text](data/images/On_lift_event_labeling.png)
 
 
-
-
-
-
-
-
-Project Timeline
-==============================
-
-Week 3 - Day 3 14th of February
-- Third meeting with Gilberto
-- app updating
-- DBScan clustering on_lift event work
-- google API work
-
-Week 3 - Day 2 13th of February
-- Streamlit App Development
-- Work on clustering names from google api
-- Fix on lift event script
-- turning functions into classes
-- Relabeling initial files with exact on lift locations
-
-Week 3 - Day 1 12th of February
-- Real Time Simulation finished
-- UX work 
-- Update lift database
-- manual addition of labeling notebook
-- pipeline work
-
-Week 2 - Day 5 9th February
-- Mapping function work
-- Function development
-- real time prediction work
-- prediction pipeline v04
-
-Week 2 - Day 4, 8th February
-- Modularization work started
-- misclassification and on lift even detection work
-- mapping work
-
-Week 2 - Day 3, 7th February
-- came up with pipeline skeleton
-- updated models v0.2 and v0.3 using different datasets
-- visualization of live pipeline
-- realtime prediction work
-- kates data added
-
-Week 2 - Day 2, 6th February:
-- Second Meeting with Gilberto
-- created off format data importing algorithm
-- Use Auto ML for other model scouting and tuning
-- Graphing work
-- added random forest model
-- Feature selection work
-- Pycaret
-
-Week 2 - Day 1, 5th February:
-- Feature selection work
-- RF best model benchmark
-- new data labeling
-- DBScan work
-
-Week 1 - Day 5, 2nd February:
-- Resampling datasets to 1 sec frequency
-- LSTM model work
-- unsupervised models
-
-Week 1 - Day 4, 1st February:
-- meeting with constructor team
-- focused on categorization supervised models
-- shared clean files
-- feature engineering work
-- Created first LR model - 95% on training 70% on validation
-- Auto ML work
-- Started with RNN
-
-Week 1 - Day 3, 31st January:
-- meeting with Stephanie
-- unsupervised clustering work, DBSCAN, KMEAN, etc
-- added script for data handling
-
-Week 1 - Day 2, 30th January:
-- Attended First meeting with Alturos CEO Gilberto Loeker
-- Team meeting to recap, brainstorm & organize
-- Assigned tasks to everyone in the group
-- Gitlab repo meeting. 
-- Gitlab exercises
-
-Week 1 - Day 1, 29th January: 
-- Create repo
-- Data Exploration
-- Problem understanding
-- First team meeting
-- Created dummy environment.yml file
-- explored Skiline app usage and cases
-- task division and defining project scope
